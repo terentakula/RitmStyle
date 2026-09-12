@@ -421,7 +421,8 @@ h3 {
   padding-top: 12px;
 }
 .hero-card {
-  min-height: min(720px, calc(100vh - 116px));
+  height: min(720px, calc(100dvh - 105px));
+  min-height: 0;
   position: relative;
   overflow: hidden;
   border-radius: var(--radius-lg);
@@ -464,13 +465,17 @@ h3 {
   mix-blend-mode: soft-light;
   pointer-events: none;
 }
-.hero-copy {
+.hero-copy-position {
   position: absolute;
   left: clamp(28px, 7vw, 88px);
   top: 50%;
   transform: translateY(-50%);
   z-index: 3;
   width: min(720px, 72%);
+}
+
+.hero-copy {
+  width: 100%;
 }
 .hero-kicker {
   color: var(--accent-soft);
@@ -684,9 +689,13 @@ h3 {
   inset: 0;
   padding: clamp(24px, 3vw, 38px);
   border-radius: 20px;
-  background: linear-gradient(145deg, rgba(23,63,77,.96), rgba(12,43,54,.96));
-  border: 1px solid rgba(255,255,255,.09);
-  box-shadow: 0 26px 70px rgba(0,0,0,.25);
+  background: linear-gradient(
+    145deg,
+    rgba(23, 63, 77, 0.96),
+    rgba(12, 43, 54, 0.96)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.25);
   overflow: hidden;
   display: flex;
   flex-direction: column;
