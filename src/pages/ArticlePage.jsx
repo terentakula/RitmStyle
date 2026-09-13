@@ -11,8 +11,8 @@ export default function ArticlePage() {
     <PageShell>
       <article className="article shell">
         <div className="article-head">
-          <Link className="text-link text-link--back" to="/blog"><ArrowIcon size={18} /> Все статьи</Link>
-          <span className="eyebrow">{article.date}</span>
+          <Link className="text-link text-link--back" to="/blog"><ArrowIcon size={18} /> Все статьи <span className="eyebrow">{article.date}</span></Link>
+          
           <h1>{article.title}</h1>
           <p>{article.excerpt}</p>
         </div>

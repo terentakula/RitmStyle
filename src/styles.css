@@ -414,7 +414,7 @@ h3 {
 }
 .mobile-nav a {
   display: block;
-  padding: 13px 0;
+  padding: 5px 0;
   font-family: var(--display);
   font-size: 30px;
   border-bottom: 1px solid var(--line);
