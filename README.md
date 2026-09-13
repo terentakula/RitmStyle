@@ -1,38 +1,105 @@
-# RitmStyle React
+# RitmStyle
 
-React/Vite rewrite of the original static RitmStyle project.
+A modern responsive website for **RitmStyle**, rebuilt from a static HTML/CSS/JavaScript project as a React application.
 
-## Run
+The project keeps the original dark aquatic visual identity while adding a more modern interface, responsive layout, animated interactions, React routing and improved mobile navigation.
+
+## Live Demo
+
+**https://terentakula.github.io/RitmStyle/**
+
+## Features
+
+* Responsive layout for desktop, tablet and mobile
+* Modern animated hero section
+* Smooth scroll-based animations
+* Interactive session cards
+* Animated testimonials slider
+* Mobile navigation menu
+* Booking modal with form validation
+* News and blog pages
+* Individual article pages
+* Responsive pricing and contact sections
+* Reduced-motion support
+* GitHub Pages deployment with GitHub Actions
+
+## Tech Stack
+
+* React
+* Vite
+* React Router
+* Motion / `motion/react`
+* CSS3
+* GitHub Actions
+* GitHub Pages
+
+## Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/terentakula/RitmStyle.git
+```
+
+Open the project directory:
+
+```bash
+cd RitmStyle
+```
+
+Install dependencies:
 
 ```bash
 npm install
+```
+
+Start the development server:
+
+```bash
 npm run dev
 ```
 
-Production build:
+## Production Build
+
+Create a production build:
 
 ```bash
 npm run build
+```
+
+Preview the production build locally:
+
+```bash
 npm run preview
 ```
 
-## Stack
+## Project Structure
 
-- React
-- Vite
-- React Router
-- Motion (`motion/react`)
-- Responsive CSS without a UI framework
+```text
+src/
+├── assets/          # Images, icons and other static assets
+├── components/      # Shared UI components
+├── data/            # Sessions, prices, reviews and article content
+├── pages/           # Home, News, Blog and Article pages
+├── App.jsx          # Application routes and layout
+├── main.jsx         # React entry point
+└── styles.css       # Global styles and responsive layout
+```
 
-## Structure
+## Deployment
 
-- `src/components` — shared Header, Footer, modal, UI helpers
-- `src/pages` — Home, News, Blog and Article pages
-- `src/data/siteData.js` — sessions, prices, testimonials and article content
-- `src/assets` — migrated original assets
+The project is automatically deployed to GitHub Pages through GitHub Actions after changes are pushed to the `main` branch.
 
-## Important
+Live version:
 
-The booking form is fully interactive on the frontend but currently does not send data to a real service. Connect it to an API, email service, Telegram bot, Formspree or CRM before production use.
+**https://terentakula.github.io/RitmStyle/**
 
-`BrowserRouter` is used. On static hosting (for example GitHub Pages) add an SPA fallback or switch to `HashRouter`.
+## Note
+
+The booking interface is implemented on the frontend. It currently does not send booking data to a backend service.
+
+A backend API, email service, Telegram bot, Formspree or CRM can be connected later for production use.
+
+## Repository
+
+https://github.com/terentakula/RitmStyle

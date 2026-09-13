@@ -191,7 +191,7 @@ export default function HomePage({ onBook }) {
                   className="review-card"
                   animate={{
                     opacity: visible ? 1 - offset * 0.28 : 0,
-                    x: offset * 18,
+                    x: 0,
                     y: offset * 12,
                     scale: 1 - offset * 0.035,
                     zIndex: testimonials.length - offset,
